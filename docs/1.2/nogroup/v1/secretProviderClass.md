@@ -8,7 +8,7 @@ permalink: /1.2/nogroup/v1/secretProviderClass/
 
 ## Index
 
-* [`fn new(name)`](#fn-new)
+* [`fn new(name, tenantId, keyvaultName, userAssignedIdentityId, objects='[]', secretName='null', secretObjects='[]')`](#fn-new)
 * [`obj metadata`](#obj-metadata)
   * [`fn withAnnotations(annotations)`](#fn-metadatawithannotations)
   * [`fn withAnnotationsMixin(annotations)`](#fn-metadatawithannotationsmixin)
@@ -35,7 +35,17 @@ permalink: /1.2/nogroup/v1/secretProviderClass/
   * [`fn withProvider(provider)`](#fn-specwithprovider)
   * [`fn withSecretObjects(secretObjects)`](#fn-specwithsecretobjects)
   * [`fn withSecretObjectsMixin(secretObjects)`](#fn-specwithsecretobjectsmixin)
+  * [`obj spec.parameters`](#obj-specparameters)
+    * [`fn newAzureParameters(tenantId, keyvaultName, userAssignedIdentityId, useVMManagedIdentity='true', usePodIdentity='false')`](#fn-specparametersnewazureparameters)
+    * [`fn withCloudName(withCloudName)`](#fn-specparameterswithcloudname)
+    * [`fn withKeyvaultName(withKeyvaultName)`](#fn-specparameterswithkeyvaultname)
+    * [`fn withObjects(objects)`](#fn-specparameterswithobjects)
+    * [`fn withTenantId(withTenantId)`](#fn-specparameterswithtenantid)
+    * [`fn withUsePodIdentity(usePodIdentity)`](#fn-specparameterswithusepodidentity)
+    * [`fn withUseVMManagedIdentity(withUseVMManagedIdentity)`](#fn-specparameterswithusevmmanagedidentity)
+    * [`fn withUserAssignedIdentityId(withUserAssignedIdentityId)`](#fn-specparameterswithuserassignedidentityid)
   * [`obj spec.secretObjects`](#obj-specsecretobjects)
+    * [`fn new(name, objects)`](#fn-specsecretobjectsnew)
     * [`fn withAnnotations(annotations)`](#fn-specsecretobjectswithannotations)
     * [`fn withAnnotationsMixin(annotations)`](#fn-specsecretobjectswithannotationsmixin)
     * [`fn withData(data)`](#fn-specsecretobjectswithdata)
@@ -45,6 +55,7 @@ permalink: /1.2/nogroup/v1/secretProviderClass/
     * [`fn withSecretName(secretName)`](#fn-specsecretobjectswithsecretname)
     * [`fn withType(type)`](#fn-specsecretobjectswithtype)
     * [`obj spec.secretObjects.data`](#obj-specsecretobjectsdata)
+      * [`fn new(key, object)`](#fn-specsecretobjectsdatanew)
       * [`fn withKey(key)`](#fn-specsecretobjectsdatawithkey)
       * [`fn withObjectName(objectName)`](#fn-specsecretobjectsdatawithobjectname)
 
@@ -53,10 +64,10 @@ permalink: /1.2/nogroup/v1/secretProviderClass/
 ### fn new
 
 ```ts
-new(name)
+new(name, tenantId, keyvaultName, userAssignedIdentityId, objects='[]', secretName='null', secretObjects='[]')
 ```
 
-new returns an instance of SecretProviderClass
+Create new azure specific secretProviderClass.
 
 ## obj metadata
 
@@ -270,9 +281,85 @@ withSecretObjectsMixin(secretObjects)
 
 **Note:** This function appends passed data to existing values
 
+## obj spec.parameters
+
+
+
+### fn spec.parameters.newAzureParameters
+
+```ts
+newAzureParameters(tenantId, keyvaultName, userAssignedIdentityId, useVMManagedIdentity='true', usePodIdentity='false')
+```
+
+ shortcut to define new azure specific prameters with defaults
+
+### fn spec.parameters.withCloudName
+
+```ts
+withCloudName(withCloudName)
+```
+
+Helper-function to set attribute according to to specification (https://learn.microsoft.com/en-us/azure/aks/csi-secrets-store-identity-access#use-a-user-assigned-managed-identity)
+
+### fn spec.parameters.withKeyvaultName
+
+```ts
+withKeyvaultName(withKeyvaultName)
+```
+
+Helper-function to set attribute according to to specification (https://learn.microsoft.com/en-us/azure/aks/csi-secrets-store-identity-access#use-a-user-assigned-managed-identity)
+
+### fn spec.parameters.withObjects
+
+```ts
+withObjects(objects)
+```
+
+Function to render objects-text. Takes an object-array e.g. [{objectName:"name",objectType:"secret"}] or an single object.
+
+### fn spec.parameters.withTenantId
+
+```ts
+withTenantId(withTenantId)
+```
+
+Helper-function to set attribute according to to specification (https://learn.microsoft.com/en-us/azure/aks/csi-secrets-store-identity-access#use-a-user-assigned-managed-identity)
+
+### fn spec.parameters.withUsePodIdentity
+
+```ts
+withUsePodIdentity(usePodIdentity)
+```
+
+Helper-function to set attribute according to to specification (https://learn.microsoft.com/en-us/azure/aks/csi-secrets-store-identity-access#use-a-user-assigned-managed-identity)
+
+### fn spec.parameters.withUseVMManagedIdentity
+
+```ts
+withUseVMManagedIdentity(withUseVMManagedIdentity)
+```
+
+Helper-function to set attribute according to to specification (https://learn.microsoft.com/en-us/azure/aks/csi-secrets-store-identity-access#use-a-user-assigned-managed-identity)
+
+### fn spec.parameters.withUserAssignedIdentityId
+
+```ts
+withUserAssignedIdentityId(withUserAssignedIdentityId)
+```
+
+Helper-function to set attribute according to to specification (https://learn.microsoft.com/en-us/azure/aks/csi-secrets-store-identity-access#use-a-user-assigned-managed-identity)
+
 ## obj spec.secretObjects
 
 
+
+### fn spec.secretObjects.new
+
+```ts
+new(name, objects)
+```
+
+Create new secretsObject.
 
 ### fn spec.secretObjects.withAnnotations
 
@@ -347,6 +434,14 @@ withType(type)
 ## obj spec.secretObjects.data
 
 
+
+### fn spec.secretObjects.data.new
+
+```ts
+new(key, object)
+```
+
+Create new secretsObjects data entry. Object has to have an objectName field or should be provided as objectName string
 
 ### fn spec.secretObjects.data.withKey
 
