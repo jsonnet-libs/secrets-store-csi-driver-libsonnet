@@ -37,6 +37,7 @@ permalink: /1.2/nogroup/v1alpha1/secretProviderClass/
   * [`fn withSecretObjectsMixin(secretObjects)`](#fn-specwithsecretobjectsmixin)
   * [`obj spec.parameters`](#obj-specparameters)
     * [`fn newAzureParameters(tenantId, keyvaultName, userAssignedIdentityId, useVMManagedIdentity='true', usePodIdentity='false')`](#fn-specparametersnewazureparameters)
+    * [`fn withClientId(withClientId)`](#fn-specparameterswithclientid)
     * [`fn withCloudName(withCloudName)`](#fn-specparameterswithcloudname)
     * [`fn withKeyvaultName(withKeyvaultName)`](#fn-specparameterswithkeyvaultname)
     * [`fn withObjects(objects)`](#fn-specparameterswithobjects)
@@ -292,6 +293,14 @@ newAzureParameters(tenantId, keyvaultName, userAssignedIdentityId, useVMManagedI
 ```
 
  shortcut to define new azure specific prameters with defaults
+
+### fn spec.parameters.withClientId
+
+```ts
+withClientId(withClientId)
+```
+
+Helper-function to set attribute according to to specification (https://learn.microsoft.com/en-us/azure/aks/csi-secrets-store-identity-access#use-a-user-assigned-managed-identity)
 
 ### fn spec.parameters.withCloudName
 

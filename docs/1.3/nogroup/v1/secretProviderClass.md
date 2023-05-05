@@ -1,5 +1,5 @@
 ---
-permalink: /1.2/nogroup/v1/secretProviderClass/
+permalink: /1.3/nogroup/v1/secretProviderClass/
 ---
 
 # nogroup.v1.secretProviderClass
