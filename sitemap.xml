@@ -2,67 +2,78 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://jsonnet-libs.github.io/secrets-store-csi-driver-libsonnet/</loc>
-         <lastmod>2024-03-05</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-04-02</lastmod>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/secrets-store-csi-driver-libsonnet/1.2/</loc>
-         <lastmod>2024-03-05</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-04-02</lastmod>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/secrets-store-csi-driver-libsonnet/1.2/nogroup/</loc>
-         <lastmod>2024-03-05</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-04-02</lastmod>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/secrets-store-csi-driver-libsonnet/1.2/nogroup/v1/</loc>
-         <lastmod>2024-03-05</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-04-02</lastmod>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/secrets-store-csi-driver-libsonnet/1.2/nogroup/v1/secretProviderClass/</loc>
-         <lastmod>2024-03-05</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-04-02</lastmod>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/secrets-store-csi-driver-libsonnet/1.2/nogroup/v1alpha1/</loc>
-         <lastmod>2024-03-05</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-04-02</lastmod>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/secrets-store-csi-driver-libsonnet/1.2/nogroup/v1alpha1/secretProviderClass/</loc>
-         <lastmod>2024-03-05</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-04-02</lastmod>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/secrets-store-csi-driver-libsonnet/1.3/</loc>
-         <lastmod>2024-03-05</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-04-02</lastmod>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/secrets-store-csi-driver-libsonnet/1.3/nogroup/</loc>
-         <lastmod>2024-03-05</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-04-02</lastmod>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/secrets-store-csi-driver-libsonnet/1.3/nogroup/v1/</loc>
-         <lastmod>2024-03-05</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-04-02</lastmod>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/secrets-store-csi-driver-libsonnet/1.3/nogroup/v1/secretProviderClass/</loc>
-         <lastmod>2024-03-05</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-04-02</lastmod>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/secrets-store-csi-driver-libsonnet/1.3/nogroup/v1alpha1/</loc>
-         <lastmod>2024-03-05</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-04-02</lastmod>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/secrets-store-csi-driver-libsonnet/1.3/nogroup/v1alpha1/secretProviderClass/</loc>
-         <lastmod>2024-03-05</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-04-02</lastmod>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/secrets-store-csi-driver-libsonnet/1.4/</loc>
+         <lastmod>2025-04-02</lastmod>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/secrets-store-csi-driver-libsonnet/1.4/nogroup/</loc>
+         <lastmod>2025-04-02</lastmod>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/secrets-store-csi-driver-libsonnet/1.4/nogroup/v1/</loc>
+         <lastmod>2025-04-02</lastmod>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/secrets-store-csi-driver-libsonnet/1.4/nogroup/v1/secretProviderClass/</loc>
+         <lastmod>2025-04-02</lastmod>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/secrets-store-csi-driver-libsonnet/1.4/nogroup/v1alpha1/</loc>
+         <lastmod>2025-04-02</lastmod>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/secrets-store-csi-driver-libsonnet/1.4/nogroup/v1alpha1/secretProviderClass/</loc>
+         <lastmod>2025-04-02</lastmod>
     </url>
 </urlset>
