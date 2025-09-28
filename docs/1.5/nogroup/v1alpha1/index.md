@@ -1,5 +1,5 @@
 ---
-permalink: /1.2/nogroup/v1alpha1/
+permalink: /1.5/nogroup/v1alpha1/
 ---
 
 # nogroup.v1alpha1
